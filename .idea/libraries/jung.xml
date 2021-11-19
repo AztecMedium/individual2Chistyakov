@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jung">
+    <CLASSES>
+      <root url="file://$APPLICATION_HOME_DIR$/plugins/jung" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$APPLICATION_HOME_DIR$/plugins/jung" recursive="false" />
+  </library>
+</component>
