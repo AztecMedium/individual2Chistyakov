@@ -7,7 +7,7 @@ import java.awt.geom.*;
 import java.util.Scanner;
 
 /**
- * the main class that calls methods for filling points, calculating point with a minimum distance,
+ * the main class that calls methods for filling points, calculating point with a minimum sum of distances,
  * and drawing points in a graphical window
  */
 public class DrawPoint2D extends Applet {

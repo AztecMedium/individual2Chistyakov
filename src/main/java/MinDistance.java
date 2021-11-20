@@ -73,29 +73,23 @@ public class MinDistance {
 
         Point2D.Float p = new Point2D.Float();
         int pos = 0;
-        //ищем минимальное расстояние
         double minDist = Double.MAX_VALUE, d;
         for (int i = 0; i < Size.size; i++) {
             d = 0;
             p = list.get(i);
-        //считаем расстояние до всех точек для каждой точки из массива
             for (int j = 0; j < Size.size; j++) {
                 if (i != j) {
                     d = d + dist(p, list.get(j));
                 }
             }
-        //если расстояние минимально - запоминаем расстояние и положение точки в массиве, чтобы потом её вывести
             if (d < minDist) {
                 minDist = d;
                 pos = i;
             }
         }
-    // выводим точку с мин расстоянием
         System.out.print("Point with min distance: " + list.get(pos).x + "," + list.get(pos).y);
         return new MyResult(p.x*500, p.y*500);
     }
-// функция, считающая расстояние между 2-мя точками
-// sqrt((x1-x2)^2 + (y1-y2)^2)
 
     /**
      * a function that counts the distance between 2 points by the formula
